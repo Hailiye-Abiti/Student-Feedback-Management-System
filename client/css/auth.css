@@ -1,0 +1,112 @@
+
+.center-box {
+    width: 350px;
+    background: white;
+    margin: 60px auto;
+    padding: 40px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343A40;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.error-msg  {
+    color: #ff0000;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd; 
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.btn {
+    padding: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+
+
+.btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.center-box p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.center-box a {
+    color: #007BFF;
+    text-decoration: none;
+
+}
+
+select[name="dept"] {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+select[name="dept"] option,
+select[name="dept"] optgroup {
+    padding: 10px;
+    font-size: 14px;
+}
+
+select[name="dept"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+
+}
+
+@media (max-width: 480px) {
+    .center-box {
+        width: 70%;          
+        margin: 40px auto;   
+        padding: 25px;      
+        border-radius: 10px; 
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .center-box h2 {
+        font-size: 1.5rem;  
+        margin-bottom: 20px; 
+    }
+
+}
