@@ -1,77 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wachemo University - Student Feedback System</title>
-    <link rel="stylesheet" href="client/style.css">
-</head>
-<body>
+<?php include 'backend/includes/header.php'; ?>
 
-    <header style="background-color: #3d4449; color: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="img/wcu_logo.png" alt="" style="height: 40px; border-radius: 50%;">
-            <h2 style="margin: 0; font-size: 1.4rem; font-weight: 600;">Wachemo University</h2>
-        </div>
-        <nav>
-            <ul style="list-style: none; display: flex; gap: 30px; margin: 0; padding: 0;">
-                <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">Home</a></li>
-                <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">About</a></li>
-                <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">Contact</a></li>
-                <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero-container">
-        <div class="hero-content-split" style="display: flex; align-items: center; padding: 50px; gap: 40px; background-color: #f4f4f4;">
-            <div class="hero-text" style="flex: 1;">
-                <h1 style="font-size: 3rem; color: #333; margin-bottom: 20px;">Your Voice Shapes WCU's Future</h1> 
-                <p class="subtopic" style="font-size: 1.1rem; color: #666; line-height: 1.6; margin-bottom: 30px;">
-                    Our secure platform allows you to rate services and share insights directly with administration. 
-                    We use your feedback to drive real improvements in campus life. 
-                </p>
-                <div class="cta-wrapper">
-                    <a href="#" class="cta-btn" style="background-color: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">Get Started Now</a>
-                </div>
-            </div>
-
-            <div class="hero-image" style="flex: 1;">
-                <img src="img/peaceParck.jpg" alt="Peace Park" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+<section class="hero-container">
+    <div class="hero-content-split">
+        
+        <div class="hero-text">
+            <h1>Your Voice Shapes WCU's Future</h1> <p class="subtopic">
+                Our secure platform allows you to rate services and share insights directly with administration. 
+                We use your feedback to drive real improvements in campus life. </p>
+            <div class="cta-wrapper">
+                <a href="backend/register/register.php" class="cta-btn">Get Started Now</a>
             </div>
         </div>
-    </section>
 
-    <section class="features-section" style="padding: 60px 50px; text-align: center;">
-        <div class="section-title" style="margin-bottom: 50px;">
-            <h2 style="font-size: 2.2rem; color: #333;">Why Use the Feedback System?</h2>
-            <p style="color: #777;">Designed to bridge the gap between students and Wachemo University administration.</p>
+        <div class="hero-image">
+            <img src="/Student-Feedback-Management-System-main/img/peaceParck.jpg" alt="Student Feedback Illustration">
         </div>
 
-        <div class="features-container" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-            <div class="feature-card" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); width: 300px; border-top: 4px solid #007bff;">
-                <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 15px;">🔒</div>
-                <h3 style="color: #007bff; margin-bottom: 15px;">100% Secured</h3>
-                <p style="color: #666; font-size: 0.95rem;">Your identity is protected. Share your honest thoughts without any hesitation or fear.</p>
-            </div>
+    </div>
+</section>
 
-            <div class="feature-card" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); width: 300px; border-top: 4px solid #007bff;">
-                <div class="feature-icon" style="font-size: 2.5rem; color: #ff9800; margin-bottom: 15px;">⚡</div>
-                <h3 style="color: #007bff; margin-bottom: 15px;">Real-time Impact</h3>
-                <p style="color: #666; font-size: 0.95rem;">Feedback goes directly to department heads, ensuring your concerns are seen immediately.</p>
-            </div>
+<section class="features-section">
+    <div class="section-title">
+        <h2>Why Use the Feedback System?</h2>
+        <p>Designed to bridge the gap between students and Wachemo University administration.</p>
+    </div>
 
-            <div class="feature-card" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); width: 300px; border-top: 4px solid #007bff;">
-                <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 15px;">📊</div>
-                <h3 style="color: #007bff; margin-bottom: 15px;">Quality Growth</h3>
-                <p style="color: #666; font-size: 0.95rem;">Help WCU improve cafeteria, dorms, and teaching standards for a better campus life.</p>
-            </div>
+    <div class="features-container">
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>100% Secured</h3>
+            <p>Your identity is protected. Share your honest thoughts without any hesitation or fear.</p>
         </div>
-    </section>
 
-    <footer style="background-color: #3d4449; color: white; text-align: center; padding: 25px; border-top: 1px solid #555;">
-        <p style="margin: 0; font-size: 0.9rem;">© 2026 Wachemo University - Student Feedback System</p>
-    </footer>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Real-time Impact</h3>
+            <p>Feedback goes directly to department heads, ensuring your concerns are seen immediately.</p>
+        </div>
 
-</body>
-</html>
+        <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Quality Growth</h3>
+            <p>Help WCU improve cafeteria, dorms, and teaching standards for a better campus life.</p>
+        </div>
+    </div>
+</section>
+
+<?php include 'backend/includes/footer.php'; ?>
